@@ -1,0 +1,66 @@
+/* ============================================================
+   Entity Inspector — Lime Studios house style
+   Tokens lifted from lime_notify: tinted type colors, uppercase
+   tracked titles, icon chips, left-accent, cubic-bezier motion.
+   ============================================================ */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  /* Surfaces — same family as lime_notify panels */
+  --bg:      #111317;
+  --bg-soft: rgba(255,255,255,0.028);
+  --glass:   rgba(255,255,255,0.05);
+  --b0:      rgba(255,255,255,0.07);
+  --b1:      rgba(255,255,255,0.09);
+  --b2:      rgba(255,255,255,0.13);
+
+  /* Text scale from lime_notify */
+  --t0: rgba(255,255,255,0.95);
+  --t1: rgba(255,255,255,0.55);
+  --t2: rgba(255,255,255,0.30);
+
+  /* Semantic type colors (exact lime_notify values) */
+  --c-veh:    #60a5fa;  --c-veh-bg:  #111520;  --c-veh-chip:  #172035;
+  --c-ped:    #f5c842;  --c-ped-bg:  #1a1810;  --c-ped-chip:  #332e0f;
+  --c-obj:    #4ade80;  --c-obj-bg:  #111a15;  --c-obj-chip:  #1a3325;
+  --c-unk:    #94a3b8;  --c-unk-bg:  #14161b;  --c-unk-chip:  #1e222b;
+
+  /* Lime brand accent */
+  --lime:    #4ade80;
+  --lime-g:  rgba(74,222,128,0.12);
+  --lime-b:  rgba(74,222,128,0.30);
+
+  /* Status */
+  --ok:   #4ade80;
+  --warn: #fbbf24;
+  --err:  #f87171;
+  --blue: #60a5fa;
+
+  --shadow: 0 4px 20px -2px rgba(0,0,0,0.7);
+  --expo:   cubic-bezier(0.22,1,0.36,1);
+  --expo-in:cubic-bezier(0.55,0,1,0.45);
+
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', 'SF Mono', ui-monospace, monospace;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  font-family: var(--sans);
+  color: var(--t0);
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  user-select: none;
+}
+
+#app { height: 100%; width: 100%; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
