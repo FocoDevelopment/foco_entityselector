@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'Lime Studios'
 description 'Admin Entity Inspector'
-version '2.3.1'
+version '1.0.0'
 
 -- Set to true in your server.cfg via:  setr lime_entityselector_suppressUpdates true
 -- or per-resource:  suppress_updates 'true'  (read by _versioncheck.lua)
